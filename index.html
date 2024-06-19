@@ -59,18 +59,21 @@
 
 		/* Animation styles */
 		#typing-animation {
-			position: relative;
+			 position: relative; /*Sets the position of the element to relative, which allows you to position it relative to its normal position. */
 			font-size: 30px;
 			font-weight: bold;
-			color: rgb(255, 255, 255);
-			overflow: hidden;
-			white-space: nowrap;
-			animation: typing 3s steps(20, end) infinite;
+			color: rgb(255, 255, 255); 
+			overflow: hidden; /* Ensures that any text that overflows the container will be hidden. 
+			                 This is crucial for the typing animation, as it hides the text that has not yet been "typed".*/
+				 white-space: nowrap;
+			animation: typing 3s steps(20, end) infinite; /*Uses a step timing function to make the animation jump to the next step at each frame, creating the typing effect.
+			                                               20 represents the number of steps, and 
+			                                               end specifies that the animation should end at the last frame of each step.*/
 		}
 
 		#typing-animation:before {
 			content: "";
-			/* position: absolute; */
+			/* position: absolute; */     
 			top: 0;
 			left: 0;
 			width: 0;
@@ -114,15 +117,18 @@
 
 
 </head>
-
+<!-- Highlight the corresponding 
+navigation link in the target navigation container when a new section is scrolled into view. -->
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
 
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 		<div class="container">
 			<a class="navbar-brand" href="index.html">Archana Shamkuwar</a>
+			<!-- When the element with data-toggle="collapse" is clicked, it will toggle (show or hide) the target element specified. -->
 			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
 				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<!-- <span>: This is an inline HTML element used to apply styles or scripts without adding any semantic meaning. -->
 				<span class="oi oi-menu"></span> Menu
 			</button>
 
@@ -227,7 +233,7 @@
 											<p><span class="title-s">Name: </span> <span>Archana Shamkuwar</span></p>
 											<p><span class="title-s">Job Role: </span> <span>Front-end Developer</span>
 											</p>
-											<p><span class="title-s">Experience: </span> <span>Attended Software skills
+											<p><span class="title-s">Experience: </span> <span>12 weeks Software skills
 													bootcamp </span>
 											</p>
 											<p><span class="title-s">Address: </span> <span>London, UK</span></p>
@@ -341,12 +347,12 @@
 			<div class="row d-flex">
 				<div class="col-md-4 d-flex ftco-animate">
 					<div class="blog-entry justify-content-end">
-						<a href="http://127.0.0.1:5500/Projects%20Final/Booki/arch.html" class="block-20 zoom-effect"
+						<a href="https://archanagedam123.github.io/Hotel-Booking-Website/" class="block-20 zoom-effect"
 							style="background-image: url('images/hotel-booking.jpg');">
 						</a>
 						<div class="text mt-3 float-right d-block">
 
-							<h3 class="heading"><a href="https://github.com/Archanagedam123">Hotel
+							<h3 class="heading"><a href="https://archanagedam123.github.io/Hotel-Booking-Website/">Hotel
 									Booking Website</a></h3>
 							<p>Developed "Miranda Hotel Booking Website" a comprehensive and
 								user-friendly hotel booking website. By this website booking of Miranda hotel is easy.
@@ -356,13 +362,13 @@
 				</div>
 				<div class="col-md-4 d-flex ftco-animate">
 					<div class="blog-entry justify-content-end">
-						<a href="https://github.com/Archanagedam123/Archana" class="block-20 zoom-effect"
+						<a href="https://archanagedam123.github.io/Loan-Calculator/" class="block-20 zoom-effect"
 							style="background-image: url('images/mortgage.webp');">
 						</a>
 						<div class="text mt-3 float-right d-block">
 
 							<h3 class="heading">
-								<a href="https://github.com/Archanagedam123">Loan Calculator
+								<a href="https://archanagedam123.github.io/Loan-Calculator/">Loan Calculator
 								</a>
 							</h3>
 							<p>Developed a comprehensive loan calculator to assist users
@@ -372,12 +378,12 @@
 				</div>
 				<div class="col-md-4 d-flex ftco-animate">
 					<div class="blog-entry">
-						<a href="https://github.com/Archanagedam123/Archana" class=" block-20 zoom-effect"
+						<a href="https://archanagedam123.github.io/Python-Snake-Game/" class=" block-20 zoom-effect"
 							style="background-image: url('images/Python Snake Game.png');">
 						</a>
 						<div class="text mt-3 float-right d-block">
 
-							<h3 class="heading"><a href="https://github.com/Archanagedam123/Archana">
+							<h3 class="heading"><a href="https://archanagedam123.github.io/Python-Snake-Game/">
 									Python Snake Game</a></h3>
 							<p>Snake is a classic arcade game where the player controls a line that grows in length,
 								with the game's primary objective being to guide the snake towards consuming items and
@@ -391,12 +397,12 @@
 			<div class="row d-flex justify-content-center">
 				<div class="col-md-4 d-flex ftco-animate">
 					<div class="blog-entry justify-content-end">
-						<a href="https://github.com/Archanagedam123" class="block-20 zoom-effect"
+						<a href="https://archanagedam123.github.io/Currency-Convertor-app/" class="block-20 zoom-effect"
 							style="background-image: url('images/th.jpg');">
 						</a>
 						<div class="text mt-3 float-right d-block">
 
-							<h3 class="heading"><a href="https://github.com/Archanagedam123">Currency
+							<h3 class="heading"><a href="https://archanagedam123.github.io/Currency-Convertor-app/">Currency
 									Convertor App</a></h3>
 							<p>Developed a sophisticated and user-friendly Currency Converter App designed to provide
 								accurate and real-time currency exchange rates. This application allows users to
@@ -406,12 +412,12 @@
 				</div>
 				<div class="col-md-4 d-flex ftco-animate">
 					<div class="blog-entry justify-content-end">
-						<a href="https://github.com/Archanagedam123/Archana" class=" block-20 zoom-effect"
+						<a href="https://archanagedam123.github.io/To-Do-List1/" class=" block-20 zoom-effect"
 							style="background-image: url('images/todo-list.jpg');">
 						</a>
 						<div class="text mt-3 float-right d-block">
 
-							<h3 class="heading"><a href="https://github.com/Archanagedam123/Archana">To Do List
+							<h3 class="heading"><a href="https://archanagedam123.github.io/To-Do-List1/">To Do List
 								</a></h3>
 							<p>It’s a list of tasks you need to complete or
 								things that you want to do. Most typically, they’re organised in order of priority.
